@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, signal} from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 
 
@@ -16,7 +16,7 @@ export type MenuItem = {
   styleUrl: './custom-sidenav.component.scss'
 })
 export class CustomSidenavComponent {
-  menuItems = signal<menuItem[]>([
+  menuItems = signal<MenuItem[]>([
 
   ])
 
