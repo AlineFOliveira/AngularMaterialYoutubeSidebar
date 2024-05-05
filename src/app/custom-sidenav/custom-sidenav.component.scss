@@ -1,3 +1,6 @@
+:host * {
+   transition: all 500ms ease-in-out; 
+}
 .sidenav-header{
     padding-top: 24px;
     text-align: center;
@@ -9,9 +12,11 @@
     }
 
     .header-text{
+        height: 3rem;
         margin: 0;
         font-size: 1rem;
         line-height: 1.5rem;
+        margin-bottom: 30px;
 
         p{
             margin: 0;
@@ -19,8 +24,20 @@
         }
     }
 
-    .hide-header-text{
-        opacity: 0;
-        height: 0px;
-    }
+    
+}
+.hide-header-text{
+    opacity: 0;
+    height: 0px !important;
+}
+
+.menu-item{
+    border-left: 5px solid;
+    border-left-color: rgba(0, 0, 0, 0);
+}
+
+.selected-menu-item{
+    border-left-color: blue;
+    background-color: rgba(0, 0, 0, 0.05);
+
 }
